@@ -31,7 +31,7 @@ recipes:
 
 # apps
 - sprout-osx-apps::intellij_ultimate_edition
-- sprout-osx-apps::remote_desktop.rb
+- sprout-osx-apps::remote_desktop
 - sprout-osx-apps::pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::alfred
 - sprout-osx-apps::1password
