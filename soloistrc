@@ -33,8 +33,8 @@ recipes:
 - sprout-osx-apps::intellij_ultimate_edition
 - sprout-osx-apps::remote_desktop
 - pivotal_workstation::screen_sharing_app
-- sprout-osx-apps::alfred
-- sprout-osx-apps::1password
+# - sprout-osx-apps::alfred
+# - sprout-osx-apps::1password
 - sprout-osx-apps::shiftit
 - pivotal_workstation::mouse_locator
 - sprout-osx-apps::menumeters
