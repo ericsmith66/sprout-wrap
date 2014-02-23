@@ -44,7 +44,7 @@ recipes:
 - sprout-osx-apps::keycastr
 
 # apps (editors)
-- sprout-osx-apps::sublime_text.rb
+- sprout-osx-apps::sublime_text
 # - sprout-osx-apps::textmate
 # - sprout-osx-apps::textmate_bundles
 # - sprout-osx-apps::textmate_preferences
