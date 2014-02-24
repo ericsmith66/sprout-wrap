@@ -41,3 +41,7 @@ cookbook 'sprout-osx-rubymine',
 
 cookbook 'sprout-homebrew',
   :git => 'git://github.com/pivotal-sprout/sprout-homebrew.git'
+
+cookbook 'macoffice',
+  :git => 'git@github.com:chef-osx/macoffice.git'
+
