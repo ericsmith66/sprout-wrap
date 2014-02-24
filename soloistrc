@@ -50,9 +50,9 @@ recipes:
 # - sprout-osx-apps::textmate_preferences
 
 - sprout-osx-apps::macvim
-- sprout-osx-apps::ctags_exuberant
+# - sprout-osx-apps::ctags_exuberant
 
-- sprout-osx-apps::intellij_ultimate_edition
+
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
