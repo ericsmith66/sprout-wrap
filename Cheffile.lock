@@ -5,6 +5,14 @@ SITE
     homebrew (1.5.4)
 
 GIT
+  remote: git://github.com/chef-osx/macoffice.git
+  ref: master
+  sha: 20f8d35480554b2f037b490fa4bb06c5285fa681
+  specs:
+    macoffice (1.0.0)
+      dmg (>= 0.0.0)
+
+GIT
   remote: git://github.com/pivotal-sprout/sprout-homebrew.git
   ref: master
   sha: 25251cec3bc0325fcc2f3b6ebb5ce3d135414cca
@@ -107,14 +115,6 @@ GIT
       dmg (>= 0.0.0)
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
-
-GIT
-  remote: git@github.com:chef-osx/macoffice.git
-  ref: master
-  sha: 20f8d35480554b2f037b490fa4bb06c5285fa681
-  specs:
-    macoffice (1.0.0)
-      dmg (>= 0.0.0)
 
 PATH
   remote: site-cookbooks/meta
