@@ -4,6 +4,7 @@ recipes:
 - sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
+- pivotal_workstation::rvm
 
 # settings
 - pivotal_workstation::sshd_on
@@ -20,7 +21,8 @@ recipes:
 - sprout-osx-git::git_scripts
 
 # development (rails)
-- sprout-osx-rbenv
+
+#- sprout-osx-rbenv
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::postgres
@@ -37,14 +39,15 @@ recipes:
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
+- sprout-osx-apps::remote_desktop
 
 # apps (editors)
-- sprout-osx-apps::textmate
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
-
+#- sprout-osx-apps::textmate
+#- sprout-osx-apps::textmate_bundles
+#- sprout-osx-apps::textmate_preferences
+- sprout-osx-apps::sublime_text
 - sprout-osx-apps::macvim
-- sprout-osx-apps::ctags_exuberant
+#- sprout-osx-apps::ctags_exuberant
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
@@ -80,3 +83,4 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
+        - omnigraffle
