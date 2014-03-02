@@ -109,13 +109,12 @@ GIT
       sprout-osx-base (>= 0.0.0)
 
 GIT
-  remote: git@github.com:chef-osx/macoffice.git
+  remote: git@github.com:ericsmith66/macoffice.git
   ref: master
-  sha: 20f8d35480554b2f037b490fa4bb06c5285fa681
+  sha: 111c3c68bfb7628c86ece6b7f09f1d2286a79b33
   specs:
     macoffice (1.0.0)
       dmg (>= 0.0.0)
-
 
 PATH
   remote: site-cookbooks/meta

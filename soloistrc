@@ -55,6 +55,7 @@ recipes:
 - sprout-osx-rubymine::preferences
 
 - sprout-homebrew
+- macoffice
 
 
 node_attributes:
@@ -72,7 +73,7 @@ node_attributes:
 #      name: Luke Winikates
 #      shortname: lwinikates
 #  git_projects:
-#    -
+#   
 #      - sprout-wrap
 #      - https://github.com/pivotal-sprout/sprout-wrap.git
   sprout:
@@ -86,3 +87,14 @@ node_attributes:
         - vagrant
         - virtualbox
         - omnigraffle
+        - alfred
+        - carbon-copy-cloner
+        - deltawalker
+        - google-refine
+        - navicat-premium
+        - cocktail
+        - sonos
+        - totalterminal
+        - textwrangler
+        - sophos-anti-virus-home-edition
+
