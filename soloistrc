@@ -57,7 +57,7 @@ recipes:
 - sprout-osx-rubymine::preferences
 
 - sprout-homebrew
-#- macoffice
+- macoffice
 node_attributes:
 #  git_pairs_domain: pivotallabs.com
 #  git_pairs_authors:
@@ -72,10 +72,10 @@ node_attributes:
 #    - initials: lw
 #      name: Luke Winikates
 #      shortname: lwinikates
-#  git_projects:
-#    -
-#      - sprout-wrap
-#      - https://github.com/pivotal-sprout/sprout-wrap.git
+  git_projects:
+    -
+      - appbuilder
+      - https://github.com/ericsmith66/appbuilder.git
   sprout:
     homebrew:
       casks:

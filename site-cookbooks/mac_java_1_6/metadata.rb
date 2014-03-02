@@ -1,0 +1,7 @@
+name             'mac_java_1_6'
+maintainer       'Onit'
+maintainer_email 'bernie.barcio@onit.com'
+license          'Apache 2.0'
+description      'Installs java 1.6 for Mac'
+version          '1.0.0'
+depends          'dmg'
