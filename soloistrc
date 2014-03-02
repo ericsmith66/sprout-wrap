@@ -4,7 +4,6 @@ recipes:
 - sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
-- pivotal_workstation::rvm
 
 # settings
 - pivotal_workstation::sshd_on
@@ -21,16 +20,18 @@ recipes:
 - sprout-osx-git::git_scripts
 
 # development (rails)
-
-#- sprout-osx-rbenv
+# - sprout-osx-rbenv
+- pivotal_workstation::rvm
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
-- pivotal_workstation::postgres
+- pivotal_workstation::mongodb
+- pivotal_workstation::redis
 - sprout-osx-apps::imagemagick
-- sprout-osx-apps::node_js
+# - sprout-osx-apps::node_js
 - sprout-osx-apps::qt
 
 # apps
+- sprout-osx-apps::intellij_community_edition
 - pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::shiftit
 - pivotal_workstation::mouse_locator
@@ -42,43 +43,44 @@ recipes:
 - sprout-osx-apps::remote_desktop
 
 # apps (editors)
-#- sprout-osx-apps::textmate
-#- sprout-osx-apps::textmate_bundles
-#- sprout-osx-apps::textmate_preferences
 - sprout-osx-apps::sublime_text
+# - sprout-osx-apps::textmate
+# - sprout-osx-apps::textmate_bundles
+# - sprout-osx-apps::textmate_preferences
+
 - sprout-osx-apps::macvim
-#- sprout-osx-apps::ctags_exuberant
+- sprout-osx-apps::ctags_exuberant
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
 - sprout-homebrew
 
+
 node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
-  git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+#  git_pairs_domain: pivotallabs.com
+#  git_pairs_authors:
+#    - initials: ah
+#      name: Abhijit Hiremagalur
+#      shortname: abhi
+#    - initials: bc
+#      name: Brian Cunnie
+#      shortname: cunnie
+#    - initials: jrhb
+#      name: Jonathan Barnes
+#    - initials: lw
+#      name: Luke Winikates
+#      shortname: lwinikates
+#  git_projects:
+#    -
+#      - sprout-wrap
+#      - https://github.com/pivotal-sprout/sprout-wrap.git
   sprout:
     homebrew:
       casks:
         - bettertouchtool
         - dropbox
         - firefox
-        - gitx-rowanj
         - google-chrome
         - skype
         - vagrant
