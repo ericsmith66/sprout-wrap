@@ -44,14 +44,14 @@ recipes:
 - macoffice
 
 # optional
-#- pivotal_workstation::screen_sharing_app
-#- sprout-osx-apps::shiftit
-#- pivotal_workstation::mouse_locator
-#- sprout-osx-apps::menumeters
-#- sprout-osx-apps::ccmenu
-#- pivotal_workstation::github_for_mac
-#- sprout-osx-apps::iterm2
-#- sprout-osx-apps::keycastr
+- pivotal_workstation::screen_sharing_app
+- sprout-osx-apps::shiftit
+- pivotal_workstation::mouse_locator
+- sprout-osx-apps::menumeters
+- sprout-osx-apps::ccmenu
+- pivotal_workstation::github_for_mac
+- sprout-osx-apps::iterm2
+- sprout-osx-apps::keycastr
 
 
 node_attributes:
@@ -86,13 +86,16 @@ node_attributes:
         - google-refine
         - totalterminal
         - textwrangler
-#        - bettertouchtool
-#        - sophos-anti-virus-home-edition
-#        - vmware-fusion
-#        - paragon-ntfs
-#        - sonos
-#        - navicat-premium
-#        - cocktail
-#        - deltawalker
-#        - carbon-copy-cloner
+        - robomongo
+# Optional
+        - bettertouchtool
+        - vmware-fusion
+        - paragon-ntfs
+        - sonos
+        - navicat-premium
+        - cocktail
+        - deltawalker
+        - carbon-copy-cloner
+        - expandrive
+        - sophos-anti-virus-home-edition
 
