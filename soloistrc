@@ -86,6 +86,7 @@ node_attributes:
         - google-refine
         - totalterminal
         - textwrangler
+# Optional
 #        - bettertouchtool
 #        - sophos-anti-virus-home-edition
 #        - vmware-fusion
