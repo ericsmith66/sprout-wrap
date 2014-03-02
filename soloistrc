@@ -1,7 +1,6 @@
 recipes:
 
 # base (required by sprout)
-- pivotal_workstation::rvm
 - sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
@@ -10,7 +9,6 @@ recipes:
 - pivotal_workstation::sshd_on
 - pivotal_workstation::inputrc
 - sprout-osx-settings::defaults_fast_key_repeat_rate
-- pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
@@ -22,69 +20,79 @@ recipes:
 
 # development (rails)
 # - sprout-osx-rbenv
+- pivotal_workstation::rvm
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::mongodb
+- pivotal_workstation::redis
 - sprout-osx-apps::imagemagick
 # - sprout-osx-apps::node_js
 - sprout-osx-apps::qt
 
 # apps
-- sprout-osx-apps::intellij_ultimate_edition
+- sprout-osx-apps::intellij_community_edition
 - sprout-osx-apps::remote_desktop
-- pivotal_workstation::screen_sharing_app
-# - sprout-osx-apps::alfred
-# - sprout-osx-apps::1password
-- sprout-osx-apps::shiftit
-- pivotal_workstation::mouse_locator
-- sprout-osx-apps::menumeters
-- sprout-osx-apps::ccmenu
-- pivotal_workstation::github_for_mac
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
-# - sprout-osx-apps::textmate
-# - sprout-osx-apps::textmate_bundles
-# - sprout-osx-apps::textmate_preferences
-
 - sprout-osx-apps::macvim
-# - sprout-osx-apps::ctags_exuberant
-
-
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
 - sprout-homebrew
+- macoffice
+
+# optional
+#- pivotal_workstation::screen_sharing_app
+#- sprout-osx-apps::shiftit
+#- pivotal_workstation::mouse_locator
+#- sprout-osx-apps::menumeters
+#- sprout-osx-apps::ccmenu
+#- pivotal_workstation::github_for_mac
+#- sprout-osx-apps::iterm2
+#- sprout-osx-apps::keycastr
+
 
 node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
-  git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+#  git_pairs_domain: pivotallabs.com
+#  git_pairs_authors:
+#    - initials: ah
+#      name: Abhijit Hiremagalur
+#      shortname: abhi
+#    - initials: bc
+#      name: Brian Cunnie
+#      shortname: cunnie
+#    - initials: jrhb
+#      name: Jonathan Barnes
+#    - initials: lw
+#      name: Luke Winikates
+#      shortname: lwinikates
+#  git_projects:
+#   
+#      - sprout-wrap
+#      - https://github.com/pivotal-sprout/sprout-wrap.git
   sprout:
     homebrew:
       casks:
-        - bettertouchtool
         - dropbox
         - firefox
-        - gitx-rowanj
         - google-chrome
         - skype
         - vagrant
         - virtualbox
+        - omnigraffle
+        - alfred
+        - google-refine
+        - totalterminal
+        - textwrangler
+#        - bettertouchtool
+#        - sophos-anti-virus-home-edition
+#        - vmware-fusion
+#        - paragon-ntfs
+#        - sonos
+#        - navicat-premium
+#        - cocktail
+#        - deltawalker
+#        - carbon-copy-cloner
+
