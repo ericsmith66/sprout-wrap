@@ -67,7 +67,7 @@ node_attributes:
   git_projects:
     -
       - appbuilder
-      - git@github.com:ericsmith66/appbuilder.git
+      - https://git@github.com:ericsmith66/appbuilder.git
 
   sprout:
     homebrew:
