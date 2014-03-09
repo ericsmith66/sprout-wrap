@@ -117,6 +117,12 @@ GIT
       dmg (>= 0.0.0)
 
 PATH
+  remote: site-cookbooks/mac_java_1_6
+  specs:
+    mac_java_1_6 (1.0.0)
+      dmg (>= 0.0.0)
+
+PATH
   remote: site-cookbooks/meta
   specs:
     meta (0.1.1)
@@ -126,6 +132,7 @@ PATH
       sprout-pivotal (>= 0.0.0)
 
 DEPENDENCIES
+  mac_java_1_6 (>= 0)
   macoffice (>= 0)
   meta (>= 0)
   osx (>= 0)
