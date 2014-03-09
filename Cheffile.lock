@@ -108,18 +108,16 @@ GIT
       homebrew (>= 0.0.0)
       sprout-osx-base (>= 0.0.0)
 
-GIT
-  remote: https://github.com/ericsmith66/macoffice.git
-  ref: master
-  sha: 111c3c68bfb7628c86ece6b7f09f1d2286a79b33
-  specs:
-    macoffice (1.0.0)
-      dmg (>= 0.0.0)
-
 PATH
   remote: site-cookbooks/mac_java_1_6
   specs:
     mac_java_1_6 (1.0.0)
+      dmg (>= 0.0.0)
+
+PATH
+  remote: site-cookbooks/macoffice
+  specs:
+    macoffice (1.0.0)
       dmg (>= 0.0.0)
 
 PATH

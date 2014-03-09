@@ -3,6 +3,9 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'meta',
   :path => 'site-cookbooks/meta'
 
+cookbook 'macoffice',
+  :path => 'site-cookbooks/macoffice'
+
 cookbook 'mac_java_1_6',
   :path => 'site-cookbooks/mac_java_1_6'
 
@@ -45,5 +48,4 @@ cookbook 'sprout-osx-rubymine',
 cookbook 'sprout-homebrew',
   :git => 'git://github.com/pivotal-sprout/sprout-homebrew.git'
 
-cookbook 'macoffice',
-  :git => 'https://github.com/ericsmith66/macoffice.git'
+
