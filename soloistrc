@@ -9,6 +9,7 @@ recipes:
 - pivotal_workstation::sshd_on
 - pivotal_workstation::inputrc
 - sprout-osx-settings::defaults_fast_key_repeat_rate
+- pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
@@ -32,27 +33,31 @@ recipes:
 # apps
 - sprout-osx-apps::intellij_community_edition
 - sprout-osx-apps::remote_desktop
+- pivotal_workstation::screen_sharing_app
+# - sprout-osx-apps::alfred
+# - sprout-osx-apps::1password
+- sprout-osx-apps::shiftit
+#- pivotal_workstation::mouse_locator
+#- sprout-osx-apps::menumeters
+- sprout-osx-apps::ccmenu
+- pivotal_workstation::github_for_mac
+- sprout-osx-apps::iterm2
+#- sprout-osx-apps::keycastr
 
 # apps (editors)
 - sprout-osx-apps::sublime_text
-- sprout-osx-apps::macvim
+# - sprout-osx-apps::textmate
+# - sprout-osx-apps::textmate_bundles
+# - sprout-osx-apps::textmate_preferences
+
+#- sprout-osx-apps::macvim
+# - sprout-osx-apps::ctags_exuberant
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
 
 - sprout-homebrew
 - macoffice
-
-# optional
-- pivotal_workstation::screen_sharing_app
-- sprout-osx-apps::shiftit
-- sprout-osx-apps::menumeters
-- sprout-osx-apps::ccmenu
-- pivotal_workstation::github_for_mac
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
-
-
 node_attributes:
 #  git_pairs_domain: pivotallabs.com
 #  git_pairs_authors:
@@ -67,35 +72,31 @@ node_attributes:
 #    - initials: lw
 #      name: Luke Winikates
 #      shortname: lwinikates
-#  git_projects:
-#   
-#      - sprout-wrap
-#      - https://github.com/pivotal-sprout/sprout-wrap.git
+  git_projects:
+    -
+      - appbuilder
+      - git@github.com:ericsmith66/appbuilder.git
   sprout:
     homebrew:
       casks:
+        - bettertouchtool
         - dropbox
         - firefox
+#        - gitx-rowanj
         - google-chrome
-        - skype
+#        - skype
         - vagrant
         - virtualbox
         - omnigraffle
-        - alfred
-        - google-refine
-        - totalterminal
-        - textwrangler
-        - robomongo
-# Optional
-        - bettertouchtool
-        - vmware-fusion
-        - paragon-ntfs
-        - sonos
-        - navicat-premium
-        - cocktail
-        - deltawalker
-        - carbon-copy-cloner
-        - expandrive
-        - sophos-anti-virus-home-edition
-        - joinme
-
+  rvm:
+    rubies:
+      ruby-1.9.3-p374:
+         env:  CC=/usr/bin/gcc CFLAGS=-Wno-error=shorten-64-to-32
+         command_line_options: --with-gcc=clang
+#        env: CC=/opt/local/bin/gcc-apple-4.2
+#        command_line_options: --enable-shared --without-tk --without-tcl
+#      ruby-2.0.0-p353:
+#        command_line_options: --verify-downloads 1
+    default: ruby-1.9.3-p374
+  versions:
+    rvm: stable

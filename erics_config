@@ -1,0 +1,100 @@
+recipes:
+
+# base (required by sprout)
+- sprout-osx-base::bash_it
+- pivotal_workstation::create_var_chef_cache
+- sprout-osx-base::homebrew
+
+# required by onit
+- pivotal_workstation::osx_updates
+- pivotal_workstation::screen_sharing_on
+
+# settings
+- pivotal_workstation::sshd_on
+- pivotal_workstation::inputrc
+- sprout-osx-settings::defaults_fast_key_repeat_rate
+- sprout-osx-settings::global_environment_variables
+
+# development (general)
+- sprout-osx-base::workspace_directory
+- pivotal_workstation::unix_essentials
+- sprout-osx-git::git_projects
+- pivotal_workstation::git_config_global_defaults
+- sprout-osx-git::git_scripts
+
+# development (rails)
+
+- pivotal_workstation::rvm
+- pivotal_workstation::gem_setup
+- pivotal_workstation::mysql
+- pivotal_workstation::mongodb
+- pivotal_workstation::redis
+- sprout-osx-apps::imagemagick
+- sprout-osx-apps::qt
+
+# apps
+- sprout-osx-apps::intellij_community_edition
+- sprout-osx-apps::remote_desktop
+
+# apps (editors)
+- sprout-osx-apps::sublime_text
+- sprout-osx-apps::macvim
+
+- sprout-osx-apps::rubymine
+- sprout-osx-rubymine::preferences
+
+- sprout-homebrew
+- macoffice
+
+# optional
+- pivotal_workstation::screen_sharing_app
+- sprout-osx-apps::shiftit
+- sprout-osx-apps::menumeters
+- pivotal_workstation::github_for_mac
+- sprout-osx-apps::iterm2
+- sprout-osx-apps::keycastr
+- pivotal_workstation::bartender
+- sprout-osx-apps::nosleep
+
+
+
+node_attributes:
+#  git_pairs_domain: pivotallabs.com
+#  git_pairs_authors:
+#    - initials: eas
+#      name: Eric Smith
+#      shortname: ericsmith66
+  git_projects:
+    -
+      - appbuilder
+      - git@github.com:ericsmith66/appbuilder.git
+
+  sprout:
+    homebrew:
+      casks:
+        - dropbox
+        - firefox
+        - google-chrome
+        - skype
+        - vagrant
+        - virtualbox
+        - textwrangler
+        - robomongo
+        - sophos-anti-virus-home-edition
+        - joinme
+# Optional
+        #- bettertouchtool
+        #- vmware-fusion
+        #- paragon-ntfs
+        #- sonos
+        #- navicat-premium
+        #- cocktail
+        #- deltawalker
+        #- carbon-copy-cloner
+        #- expandrive
+        #- tunnelblick
+        #- alfred
+        #- omnigraffle
+        #- google-refine
+        #- totalterminal
+
