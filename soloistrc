@@ -13,6 +13,7 @@ recipes:
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
+- mac_java_1_6
 - sprout-osx-base::workspace_directory
 - pivotal_workstation::unix_essentials
 - sprout-osx-git::git_projects
@@ -88,6 +89,7 @@ node_attributes:
         - vagrant
         - virtualbox
         - omnigraffle
+#        - navicat-for-mysql
   rvm:
     rubies:
       ruby-1.9.3-p374:
