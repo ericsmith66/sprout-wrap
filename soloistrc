@@ -4,6 +4,7 @@ recipes:
 - sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
+- mac_java_1_6
 
 # required by onit
 - pivotal_workstation::osx_updates
@@ -27,7 +28,6 @@ recipes:
 - pivotal_workstation::rvm
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
-- pivotal_workstation::mongodb
 - pivotal_workstation::redis
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::qt
@@ -49,7 +49,7 @@ recipes:
 # optional
 - pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::shiftit
-- sprout-osx-apps::menumeters
+#- sprout-osx-apps::menumeters
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
