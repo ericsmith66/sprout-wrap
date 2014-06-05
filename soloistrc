@@ -4,7 +4,7 @@ recipes:
 - sprout-osx-base::bash_it
 - pivotal_workstation::create_var_chef_cache
 - sprout-osx-base::homebrew
-- mac_java_1_6
+#- mac_java_1_6
 
 # required by onit
 - pivotal_workstation::osx_updates
