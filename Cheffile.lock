@@ -5,6 +5,14 @@ SITE
     homebrew (1.5.4)
 
 GIT
+  remote: git://github.com/gsgilman/pivotal_workstation.git
+  ref: master
+  sha: a534a47d4311dd69497bf3e3c57bb6ca3dab8e32
+  specs:
+    pivotal_workstation (1.0.0)
+      dmg (>= 0.0.0)
+
+GIT
   remote: git://github.com/pivotal-sprout/sprout-homebrew.git
   ref: master
   sha: 25251cec3bc0325fcc2f3b6ebb5ce3d135414cca
@@ -19,21 +27,6 @@ GIT
   sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
   specs:
     osx (0.1.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: pivotal_workstation
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
-  specs:
-    pivotal_workstation (1.0.0)
-      dmg (>= 0.0.0)
-      homebrew (>= 0.0.0)
-      osx (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
-      sprout-pivotal (>= 0.0.0)
 
 GIT
   remote: git://github.com/pivotal-sprout/sprout.git
@@ -124,7 +117,6 @@ PATH
   remote: site-cookbooks/meta
   specs:
     meta (0.1.1)
-      pivotal_workstation (>= 0.0.0)
       sprout-osx-apps (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
       sprout-pivotal (>= 0.0.0)
