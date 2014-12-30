@@ -1,9 +1,9 @@
 recipes:
 
 # base (required by sprout)
-- sprout-osx-base::bash_it
+- sprout-base::bash_it
 - pivotal_workstation::create_var_chef_cache
-- sprout-osx-base::homebrew
+- sprout-base::homebrew
 #- mac_java_1_6
 
 # required by onit
@@ -11,21 +11,21 @@ recipes:
 - pivotal_workstation::screen_sharing_on
 
 # settings
-- pivotal_workstation::sshd_on
-- pivotal_workstation::inputrc
+- sprout-osx-settings::sshd_on
+- sprout-osx-settings::inputrc
 - sprout-osx-settings::defaults_fast_key_repeat_rate
 - sprout-osx-settings::global_environment_variables
 
 # development (general)
-- sprout-osx-base::workspace_directory
-#- pivotal_workstation::unix_essentials
-- sprout-osx-git::git_projects
-- pivotal_workstation::git_config_global_defaults
-- sprout-osx-git::git_scripts
+- sprout-base::workspace_directory
+- sprout-git::projects
+- sprout-git::git_scripts
+- pivotal_workstation::unix_essentials
+#- pivotal_workstation::git_config_global_defaults
 
 # development (rails)
 
-- pivotal_workstation::rvm
+- rvm::system
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::redis
@@ -41,18 +41,17 @@ recipes:
 - sprout-osx-apps::macvim
 
 - sprout-osx-apps::rubymine
-- sprout-osx-rubymine::preferences
+- sprout-rubymine::preferences
 
 - sprout-homebrew
 - macoffice
 
 # optional
-- sprout-osx-settings:screen_sharing_app
+- pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::shiftit
 #- sprout-osx-apps::menumeters
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
 - pivotal_workstation::bartender
 - sprout-osx-apps::nosleep
 

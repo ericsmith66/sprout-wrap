@@ -1,8 +1,9 @@
 SITE
-  remote: http://community.opscode.com/api/v1
+  remote: https://supermarket.getchef.com/api/v1
   specs:
-    dmg (2.1.4)
-    homebrew (1.5.4)
+    chef_gem (0.1.0)
+    dmg (2.2.2)
+    homebrew (1.10.0)
 
 GIT
   remote: git://github.com/gsgilman/pivotal_workstation.git
@@ -13,93 +14,65 @@ GIT
       dmg (>= 0.0.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout-homebrew.git
+  remote: https://github.com/pivotal-sprout/osx
   ref: master
-  sha: 25251cec3bc0325fcc2f3b6ebb5ce3d135414cca
-  specs:
-    sprout-homebrew (0.1.0)
-      homebrew (>= 0.0.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: osx
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
+  sha: 70ef029c8b25dbab5be2fb328b987297c05936db
   specs:
     osx (0.1.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-apps
+  remote: https://github.com/pivotal-sprout/sprout-base
   ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
+  sha: 9584e55ecc51c9938071eafc2065a530a766fa82
+  specs:
+    sprout-base (0.1.0)
+
+GIT
+  remote: https://github.com/pivotal-sprout/sprout-git
+  ref: master
+  sha: 06d7b052308f9b9b736e99fb444430ea4d9beb66
+  specs:
+    sprout-git (0.1.0)
+      homebrew (>= 0.0.0)
+      sprout-base (>= 0.0.0)
+
+GIT
+  remote: https://github.com/pivotal-sprout/sprout-homebrew
+  ref: master
+  sha: 67a6a6ba55d9d8e933645ae7fd1331b85b05d1d0
+  specs:
+    sprout-homebrew (0.1.0)
+      homebrew (>= 1.5.4)
+
+GIT
+  remote: https://github.com/pivotal-sprout/sprout-osx-apps
+  ref: master
+  sha: 1407e20d95f5b859fdaddd03d30d578e3c061309
   specs:
     sprout-osx-apps (0.1.0)
       dmg (>= 0.0.0)
-      homebrew (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
+      homebrew (>= 1.6.6)
+      sprout-base (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-base
+  remote: https://github.com/pivotal-sprout/sprout-osx-settings
   ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
-  specs:
-    sprout-osx-base (0.1.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-git
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
-  specs:
-    sprout-osx-git (0.1.0)
-      homebrew (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-rbenv
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
-  specs:
-    sprout-osx-rbenv (0.1.0)
-      homebrew (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-rubymine
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
-  specs:
-    sprout-osx-rubymine (0.1.0)
-      homebrew (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-osx-settings
-  ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
+  sha: 2470797e8997688b731928cc78f48e51c3562803
   specs:
     sprout-osx-settings (0.1.0)
       homebrew (>= 0.0.0)
       osx (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
+      sprout-base (>= 0.0.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: sprout-pivotal
+  remote: https://github.com/pivotal-sprout/sprout-rubymine
   ref: master
-  sha: 522fdfc126f1944701c3df97f1ba5ea22a3a5fc4
+  sha: 17ba0c71929dc7602ed12d0e77b136a19f8f36d1
   specs:
-    sprout-pivotal (0.1.0)
-      dmg (>= 0.0.0)
-      homebrew (>= 0.0.0)
-      sprout-osx-base (>= 0.0.0)
+    sprout-rubymine (0.1.0)
+      sprout-base (>= 0.0.0)
+      sprout-homebrew (>= 0.0.0)
 
 PATH
   remote: site-cookbooks/mac_java_1_6
@@ -117,9 +90,15 @@ PATH
   remote: site-cookbooks/meta
   specs:
     meta (0.1.1)
+      pivotal_workstation (>= 0.0.0)
       sprout-osx-apps (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
-      sprout-pivotal (>= 0.0.0)
+
+PATH
+  remote: site-cookbooks/rvm
+  specs:
+    rvm (0.10.1)
+      chef_gem (>= 0.0.0)
 
 DEPENDENCIES
   mac_java_1_6 (>= 0)
@@ -127,12 +106,11 @@ DEPENDENCIES
   meta (>= 0)
   osx (>= 0)
   pivotal_workstation (>= 0)
+  rvm (>= 0)
+  sprout-base (>= 0)
+  sprout-git (>= 0)
   sprout-homebrew (>= 0)
   sprout-osx-apps (>= 0)
-  sprout-osx-base (>= 0)
-  sprout-osx-git (>= 0)
-  sprout-osx-rbenv (>= 0)
-  sprout-osx-rubymine (>= 0)
   sprout-osx-settings (>= 0)
-  sprout-pivotal (>= 0)
+  sprout-rubymine (>= 0)
 

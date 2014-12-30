@@ -10,4 +10,4 @@ supports          'mac_os_x'
 depends           'pivotal_workstation'
 depends           'sprout-osx-settings'
 depends           'sprout-osx-apps'
-depends           'sprout-pivotal'
+
