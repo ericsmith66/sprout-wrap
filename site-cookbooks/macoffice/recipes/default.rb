@@ -19,7 +19,7 @@
 
 dmg_package 'Office Installer' do
   source 'http://bc626bd3da75445ccab5-7b1b94a246ea4ba9b8bfd5c860ae47a1.r93.cf1.rackcdn.com/en_office_for_mac_2011_home_and_business_2011_with_service_pack_2_838477.dmg'
-  checksum '80d9b48fa89847797e166811b9deb7a0cfaff48a989ac8aa2aaf56bca55c1855'
+  checksum 'd74534a8af3b88e0b53403eba033d77081b84c4826f0e78ec69094fb3e45d8de'
   volumes_dir 'Microsoft Office 2011'
   action :install
   type "pkg"

@@ -25,7 +25,7 @@ recipes:
 
 # development (rails)
 
-- rvm::system
+#- rvm::system
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::redis
@@ -47,7 +47,7 @@ recipes:
 - macoffice
 
 # optional
-- pivotal_workstation::screen_sharing_app
+#- pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::shiftit
 #- sprout-osx-apps::menumeters
 - pivotal_workstation::github_for_mac
