@@ -1,7 +1,6 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    chef_gem (0.1.0)
     dmg (2.2.2)
     homebrew (1.10.0)
 
@@ -94,19 +93,12 @@ PATH
       sprout-osx-apps (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
 
-PATH
-  remote: site-cookbooks/rvm
-  specs:
-    rvm (0.10.1)
-      chef_gem (>= 0.0.0)
-
 DEPENDENCIES
   mac_java_1_6 (>= 0)
   macoffice (>= 0)
   meta (>= 0)
   osx (>= 0)
   pivotal_workstation (>= 0)
-  rvm (>= 0)
   sprout-base (>= 0)
   sprout-git (>= 0)
   sprout-homebrew (>= 0)
