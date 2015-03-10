@@ -29,8 +29,8 @@ recipes:
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::redis
-- sprout-osx-apps::imagemagick
-- sprout-osx-apps::qt
+#- sprout-osx-apps::imagemagick
+#- sprout-osx-apps::qt
 
 # apps
 - sprout-osx-apps::intellij_community_edition
@@ -44,7 +44,7 @@ recipes:
 - sprout-rubymine::preferences
 
 - sprout-homebrew
-- macoffice
+#- macoffice
 
 # optional
 #- pivotal_workstation::screen_sharing_app

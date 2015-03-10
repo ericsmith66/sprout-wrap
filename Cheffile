@@ -31,4 +31,4 @@ cookbook 'sprout-rubymine',
   :github => 'pivotal-sprout/sprout-rubymine'
 
 cookbook 'sprout-homebrew',
-  :github => 'pivotal-sprout/sprout-homebrew'
+  :path => 'site-cookbooks/sprout-homebrew'
