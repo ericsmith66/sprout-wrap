@@ -97,15 +97,15 @@ node_attributes:
         #- google-refine
         #- totalterminal
 
-  rvm:
-    rubies:
+#  rvm:
+#    rubies:
 #      ruby-1.9.3-p374:
 #         env:  CC=/usr/bin/gcc CFLAGS=-Wno-error=shorten-64-to-32
 #         command_line_options: --with-gcc=clang
 #        env: CC=/opt/local/bin/gcc-apple-4.2
 #        command_line_options: --enable-shared --without-tk --without-tcl
-      ruby-2.0.0-p353:
-        command_line_options: --verify-downloads 1
-    default: ruby-2.0.0-p353
-  versions:
-    rvm: stable
+#      ruby-2.0.0-p353:
+#        command_line_options: --verify-downloads 1
+#    default: ruby-2.0.0-p353
+#  versions:
+#    rvm: stable
