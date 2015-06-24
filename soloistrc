@@ -21,16 +21,15 @@ recipes:
 - sprout-git::projects
 - sprout-git::git_scripts
 - pivotal_workstation::unix_essentials
-#- pivotal_workstation::git_config_global_defaults
+- pivotal_workstation::git_config_global_defaults
 
 # development (rails)
 
-#- rvm::system
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::redis
-#- sprout-osx-apps::imagemagick
-#- sprout-osx-apps::qt
+- sprout-osx-apps::imagemagick
+- sprout-osx-apps::qt
 
 # apps
 - sprout-osx-apps::intellij_community_edition
@@ -39,17 +38,18 @@ recipes:
 # apps (editors)
 - sprout-osx-apps::sublime_text
 - sprout-osx-apps::macvim
-
+#
 - sprout-osx-apps::rubymine
 - sprout-rubymine::preferences
 
 - sprout-homebrew
 #- macoffice
+- ulimit
 
 # optional
-#- pivotal_workstation::screen_sharing_app
+- pivotal_workstation::screen_sharing_app
 - sprout-osx-apps::shiftit
-#- sprout-osx-apps::menumeters
+- sprout-osx-apps::menumeters
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - pivotal_workstation::bartender
@@ -58,15 +58,15 @@ recipes:
 
 
 node_attributes:
-#  git_pairs_domain: pivotallabs.com
-#  git_pairs_authors:
-#    - initials: eas
-#      name: Eric Smith
-#      shortname: ericsmith66
-#  git_projects:
-#    -
-#      - appbuilder
-#      - https://github.com/ericsmith66/appbuilder.git
+  git_pairs_domain: pivotallabs.com
+  git_pairs_authors:
+    - initials: eas
+      name: Eric Smith
+      shortname: ericsmith66
+  git_projects:
+    -
+      - appbuilder
+      - https://github.com/ericsmith66/appbuilder.git
 
   sprout:
     homebrew:
@@ -74,13 +74,13 @@ node_attributes:
         - dropbox
         - firefox
         - google-chrome
-        - skype
+b       - skype
         - vagrant
         - virtualbox
         - textwrangler
         - robomongo
         - sophos-anti-virus-home-edition
-        - joinme
+b       - joinme
 # Optional
         #- bettertouchtool
         #- vmware-fusion
@@ -89,14 +89,14 @@ node_attributes:
         #- navicat-premium
         #- cocktail
         #- deltawalker
-        #- carbon-copy-cloner
+        - carbon-copy-cloner
         #- expandrive
-        #- tunnelblick
+        - tunnelblick
         #- alfred
-        #- omnigraffle
+        - omnigraffle
         #- google-refine
         #- totalterminal
-
+ 
 #  rvm:
 #    rubies:
 #      ruby-1.9.3-p374:

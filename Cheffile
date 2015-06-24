@@ -6,6 +6,9 @@ cookbook 'meta',
 cookbook 'macoffice',
   :path => 'site-cookbooks/macoffice'
 
+cookbook 'ulimit',
+  :path => 'site-cookbooks/ulimit'
+
 cookbook 'mac_java_1_6',
   :path => 'site-cookbooks/mac_java_1_6'
 
