@@ -3,7 +3,7 @@ recipes:
 # base (required by sprout)
 - sprout-base::bash_it
 - pivotal_workstation::create_var_chef_cache
-- sprout-base::homebrew
+#- sprout-base::homebrew
 #- mac_java_1_6
 
 # required by onit
@@ -21,66 +21,66 @@ recipes:
 - sprout-git::projects
 - sprout-git::git_scripts
 - pivotal_workstation::unix_essentials
-- pivotal_workstation::git_config_global_defaults
+#- pivotal_workstation::git_config_global_defaults
 
 # development (rails)
 
 - pivotal_workstation::gem_setup
-- pivotal_workstation::mysql
-- pivotal_workstation::redis
-- sprout-osx-apps::imagemagick
-- sprout-osx-apps::qt
+#- pivotal_workstation::mysql
+#- pivotal_workstation::redis
+#- sprout-osx-apps::imagemagick
+#- sprout-osx-apps::qt
 
 # apps
-- sprout-osx-apps::intellij_community_edition
-- sprout-osx-apps::remote_desktop
+#- sprout-osx-apps::intellij_community_edition
+#- sprout-osx-apps::remote_desktop
 
 # apps (editors)
-- sprout-osx-apps::sublime_text
-- sprout-osx-apps::macvim
+#- sprout-osx-apps::sublime_text
+#- sprout-osx-apps::macvim
 #
-- sprout-osx-apps::rubymine
-- sprout-rubymine::preferences
+#- sprout-osx-apps::rubymine
+#- sprout-rubymine::preferences
 
-- sprout-homebrew
+#- sprout-homebrew
 #- macoffice
-- ulimit
+#- ulimit
 
 # optional
-- pivotal_workstation::screen_sharing_app
-- sprout-osx-apps::shiftit
-- sprout-osx-apps::menumeters
+#- pivotal_workstation::screen_sharing_app
+#- sprout-osx-apps::shiftit
+#- sprout-osx-apps::menumeters
 - pivotal_workstation::github_for_mac
-- sprout-osx-apps::iterm2
-- pivotal_workstation::bartender
-- sprout-osx-apps::nosleep
+#- sprout-osx-apps::iterm2
+#- pivotal_workstation::bartender
+#- sprout-osx-apps::nosleep
 
 
 
-node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
-    - initials: eas
-      name: Eric Smith
-      shortname: ericsmith66
-  git_projects:
-    -
-      - appbuilder
-      - https://github.com/ericsmith66/appbuilder.git
+#node_attributes:
+#  git_pairs_domain: pivotallabs.com
+#  git_pairs_authors:
+#    - initials: eas
+#      name: Eric Smith
+#      shortname: ericsmith66
+#  git_projects:
+#    -
+#      - appbuilder
+#      - https://github.com/ericsmith66/appbuilder.git
 
-  sprout:
-    homebrew:
-      casks:
-        - dropbox
-        - firefox
-        - google-chrome
-b       - skype
-        - vagrant
-        - virtualbox
-        - textwrangler
-        - robomongo
-        - sophos-anti-virus-home-edition
-b       - joinme
+#  sprout:
+#    homebrew:
+#      casks:
+#        - dropbox
+#        - firefox
+#        - google-chrome
+#        - skype
+#        - vagrant
+#        - virtualbox
+#        - textwrangler
+#        - robomongo
+#        - sophos-anti-virus-home-edition
+#        - joinme
 # Optional
         #- bettertouchtool
         #- vmware-fusion
@@ -89,11 +89,11 @@ b       - joinme
         #- navicat-premium
         #- cocktail
         #- deltawalker
-        - carbon-copy-cloner
+        #- carbon-copy-cloner
         #- expandrive
-        - tunnelblick
+        #- tunnelblick
         #- alfred
-        - omnigraffle
+        #- omnigraffle
         #- google-refine
         #- totalterminal
  
