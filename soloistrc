@@ -19,13 +19,13 @@ recipes:
 # development (general)
 - sprout-base::workspace_directory
 - sprout-git::projects
-- sprout-git::git_scripts
-- pivotal_workstation::unix_essentials
+#- sprout-git::git_scripts
+#- pivotal_workstation::unix_essentials
 #- pivotal_workstation::git_config_global_defaults
 
 # development (rails)
 
-- pivotal_workstation::gem_setup
+#- pivotal_workstation::gem_setup
 #- pivotal_workstation::mysql
 #- pivotal_workstation::redis
 #- sprout-osx-apps::imagemagick
@@ -50,7 +50,7 @@ recipes:
 #- pivotal_workstation::screen_sharing_app
 #- sprout-osx-apps::shiftit
 #- sprout-osx-apps::menumeters
-- pivotal_workstation::github_for_mac
+#- pivotal_workstation::github_for_mac
 #- sprout-osx-apps::iterm2
 #- pivotal_workstation::bartender
 #- sprout-osx-apps::nosleep
